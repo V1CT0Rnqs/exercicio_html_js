@@ -13,9 +13,9 @@ form.addEventListener("submit", function (e)
         const mensagemResposta = document.getElementById('mensagem-resposta');
 
         //Mensagem caso Y seja maior que X
-        const mensagemCasoY = 'O valor de <b>Y</b> é maior que o valor de <b>X</b>'
+        const mensagemCasoY = 'O valor de Y é maior que o valor de X'
         //Mensagem caso X seja maior que Y
-        const mensagemCasoX = 'O valor de <b>X</b> é maior que o valor de <b>Y</b>'
+        const mensagemCasoX = 'O valor de X é maior que o valor de Y'
         //Mensagem caso os números sejam iguais
         const mensagemIguais = 'Os valores de <b>X</b> e <b>Y</b> são iguais'
 
@@ -25,7 +25,7 @@ form.addEventListener("submit", function (e)
             mensagemResposta.innerHTML = mensagemCasoX;
             mensagemResposta.style.display = 'block';
         }
-        else if(numeroY.value == numeroX.value)
+        else if(numeroY.value < numeroX.value)
         {
             mensagemResposta.innerHTML = mensagemIguais;
             mensagemResposta.style.display = 'block';

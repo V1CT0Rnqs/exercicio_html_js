@@ -14,15 +14,17 @@
     <section>
         <div class="container">
             <H1>Calculando</H1>
-            <h2>x>y</h2>
-            <form class="form-medicao">
-                <input id="numero-x" type="number" required placeholder=" Insira um Número"/>
-                <input inputmode="numero-y" type="number" required placeholder="Insira um Número"/>
+            <h2>
+                x>y ou y>x
+            </h2>
+            <form id="form-medicao">
+                <input id="numero-x" type="number" required placeholder=" Insira um Número X"/>
+                <input id="numero-y" type="number" required placeholder="Insira um Número Y"/>
                 <button id="calcular" type="submit">Calcular</button>
             </form>
-            <p id="mensagem-resposta">
-                o valor do campo <b>X</b> é maior que o valor de campo <b>Y</b>
-            </p>
+            <p id="mensagem-resposta"></p>
         </div>
-    </section>
+        <div>
+            <script src="./main.js"></script>
+        </div>
 </body>
