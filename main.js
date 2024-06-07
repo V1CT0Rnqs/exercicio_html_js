@@ -1,7 +1,7 @@
 //Definindo variáveis e cosntantes
 const form = document.getElementById('form-medicao');
-let numeroX = document.getElementById("numero-x");
-let numeroY = document.getElementById('numero-y');
+const numeroX = document.getElementById("numero-x");
+const numeroY = document.getElementById('numero-y');
 
 //Alterando a função do botão enviar
 form.addEventListener("submit", function (e)
@@ -17,23 +17,20 @@ form.addEventListener("submit", function (e)
         //Mensagem caso X seja maior que Y
         const mensagemCasoX = 'O valor de X é maior que o valor de Y'
         //Mensagem caso os números sejam iguais
-        const mensagemIguais = 'Os valores de <b>X</b> e <b>Y</b> são iguais'
+        const mensagemIguais = 'Os valores de X e Y são iguais'
 
         //Condições que definem o resultado a emitr ao usuário
-        if(numeroX.value > numeroY.value)
-        {
+        if(numeroX.value > numeroY.value) {
             mensagemResposta.innerHTML = mensagemCasoX;
             mensagemResposta.style.display = 'block';
         }
-        else if(numeroY.value < numeroX.value)
-        {
-            mensagemResposta.innerHTML = mensagemIguais;
+        else if(numeroX.value < numeroY.value){
+            mensagemResposta.innerHTML = mensagemCasoY;
             mensagemResposta.style.display = 'block';
         }
         else
         {
-            mensagemResposta.innerHTML = mensagemCasoX;
+            mensagemResposta.innerHTML = mensagemIguais;
             mensagemResposta.style.display = 'block';
         }
     })
-
