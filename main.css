@@ -40,7 +40,6 @@ h2 {
     margin: 0px 75px;
 }
 
-
 form input {
     display:block;
     height: 24px;
@@ -71,7 +70,7 @@ input {
     font-family: "Seymour One", sans-serif;
 }
 
-#mensagem-resposta, b {
+#mensagem-resposta {
     font-size: 30px;
     margin-top: 60px ;
     background-color: #015333d5;
@@ -81,4 +80,16 @@ input {
     font-family: "Seymour One", sans-serif;
     display: none
 }
+
+#mensagem-erro {
+    font-size: 30px;
+    margin-top: 100px ;
+    background-color: #cc0303d5;
+    background-image: none;
+    padding: 10px;
+    color: white;
+    font-family: "Seymour One", sans-serif;
+    display: none;
+}
+
 

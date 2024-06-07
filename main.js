@@ -11,6 +11,7 @@ form.addEventListener("submit", function (e)
 
         //Constante ligada a tag <p> como id de resposta
         const mensagemResposta = document.getElementById('mensagem-resposta');
+        const mensagemErro = document.getElementById('mensagem-erro')
 
         //Mensagem caso Y seja maior que X
         const mensagemCasoY = 'O valor de Y é maior que o valor de X'
@@ -21,8 +22,8 @@ form.addEventListener("submit", function (e)
 
         //Condições que definem o resultado a emitr ao usuário
         if(numeroX.value > numeroY.value) {
-            mensagemResposta.innerHTML = mensagemCasoX;
-            mensagemResposta.style.display = 'block';
+            mensagemErro.innerHTML = mensagemCasoX;
+            mensagemErro.style.display = 'block';
         }
         else if(numeroX.value < numeroY.value){
             mensagemResposta.innerHTML = mensagemCasoY;
@@ -30,7 +31,7 @@ form.addEventListener("submit", function (e)
         }
         else
         {
-            mensagemResposta.innerHTML = mensagemIguais;
-            mensagemResposta.style.display = 'block';
+            mensagemErro.innerHTML = mensagemIguais;
+            mensagemErro.style.display = 'block';
         }
     })
